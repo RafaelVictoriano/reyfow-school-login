@@ -15,9 +15,7 @@ export const lambdaHandler = async (event: APIGatewayProxyEvent): Promise<APIGat
 
         response = {
             statusCode: 200,
-            body: JSON.stringify({
-                userResponseDTO,
-            }),
+            body: JSON.stringify(userResponseDTO),
             headers: {
                 Authorization: 'Bearer ' + tokenJwt,
             },

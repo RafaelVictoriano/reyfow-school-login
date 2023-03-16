@@ -8,10 +8,6 @@ provider:
 functions:
   login:
     handler: app.lambdaHandler
-    events:
-      - httpApi:
-          path: /login
-          method: post
 plugins:
   - serverless-plugin-typescript
 custom:

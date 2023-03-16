@@ -1,12 +1,12 @@
 export class UserRequestDTO {
     private readonly _user: string;
     private readonly _password: string;
-    private readonly _roles: string[];
+    private readonly role: string;
 
-    constructor(user: string, password: string, roles: string[]) {
+    constructor(user: string, password: string, roles: string) {
         this._user = user;
         this._password = password;
-        this._roles = roles;
+        this.role = roles;
     }
 
     get user(): string {
@@ -17,7 +17,7 @@ export class UserRequestDTO {
         return this._password;
     }
 
-    get roles(): string[] {
-        return this._roles;
+    get roles(): string {
+        return this.role;
     }
 }

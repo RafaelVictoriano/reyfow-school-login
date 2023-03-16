@@ -18,6 +18,6 @@ export class GetCredentialsService {
         if (isPasswordsNotMatch) {
             throw new BusinessError(401, 'Password or email is invalid');
         }
-        return { username: user.username, roles: user.roles };
+        return { username: user.username, role: user.role };
     };
 }

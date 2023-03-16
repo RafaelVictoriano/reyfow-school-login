@@ -1,4 +1,4 @@
 export interface IUserResponseDTO {
     username: string;
-    roles: string[];
+    role: string;
 }
